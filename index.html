@@ -1,274 +1,116 @@
-
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Política de Privacidade - infocon</title>
-
+  <title>Política de Privacidade - CONINFO</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 24px;
-      background: #f7f7f7;
-      color: #222;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background: #fff;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    h1, h2 {
-      color: #333;
-    }
-
-    h1 {
-      margin-top: 0;
-    }
-
-    .info {
-      background: #f1f1f1;
-      padding: 15px;
-      border-radius: 6px;
-      margin-bottom: 25px;
-    }
-
-    .info p {
-      margin: 5px 0;
-    }
-
-    a {
-      color: #0066cc;
-    }
+    body { font-family: Arial, sans-serif; line-height: 1.65; margin: 0; padding: 24px; background: #f7f7f7; color: #222; }
+    .container { max-width: 900px; margin: auto; background: #fff; padding: 32px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+    h1, h2 { color: #222; }
+    h1 { margin-top: 0; }
+    .info { background: #f1f3f5; padding: 16px; border-radius: 8px; margin-bottom: 26px; }
+    .info p { margin: 5px 0; }
+    a { color: #0066cc; }
+    li { margin-bottom: 8px; }
   </style>
-
 </head>
-
 <body>
-
   <div class="container">
+    <h1>Política de Privacidade - CONINFO</h1>
+    <p><strong>Última atualização:</strong> 22 de setembro de 2026</p>
 
-<h1>Política de Privacidade - infocon</h1>
+    <div class="info">
+      <p><strong>Nome do aplicativo:</strong> CONINFO - Concursos</p>
+      <p><strong>Desenvolvedor:</strong> Jaison do vale</p>
+      <p><strong>Identificador do aplicativo:</strong> com.jaison.coninfo</p>
+      <p><strong>E-mail de contato:</strong> <a href="mailto:jaison1232@gmail.com">jaison1232@gmail.com</a></p>
+    </div>
 
-<p>
-  <strong>Última atualização:</strong> 02 de julho de 2026
-</p>
+    <p>Esta Política de Privacidade explica como o aplicativo <strong>CONINFO - Concursos</strong> trata informações relacionadas ao uso do aplicativo, incluindo autenticação, desempenho em questões e simulados, ranking, anúncios e compras realizadas por meio do Google Play.</p>
 
-<div class="info">
-  <p><strong>Nome do aplicativo:</strong> infocon</p>
-  <p><strong>Desenvolvedor:</strong> Jaison do vale</p>
-  <p><strong>E-mail:</strong> 
-    <a href="mailto:jaison1232@gmail.com">
-      jaison1232@gmail.com
-    </a>
-  </p>
-</div>
+    <h2>1. Informações tratadas pelo aplicativo</h2>
+    <p>Dependendo de como o usuário utiliza o CONINFO, podem ser tratados os seguintes dados:</p>
+    <ul>
+      <li><strong>Dados de autenticação e conta:</strong> nome, endereço de e-mail, identificador de usuário (UID) do Firebase e informações associadas ao login.</li>
+      <li><strong>Login com Google:</strong> quando o usuário escolhe entrar com uma conta Google, o aplicativo utiliza o sistema de credenciais do Google e o Firebase Authentication para autenticar a conta.</li>
+      <li><strong>Login anônimo:</strong> o aplicativo também pode criar uma sessão anônima no Firebase para permitir o uso de funcionalidades que dependem do Firestore, mesmo sem uma conta comum.</li>
+      <li><strong>Dados de desempenho:</strong> quantidade de questões respondidas, quantidade de acertos, percentual de acertos e sequência de dias de estudo.</li>
+      <li><strong>Histórico de simulados:</strong> data, modalidade ou matéria, quantidade de questões, quantidade de acertos e tempo gasto no simulado.</li>
+      <li><strong>Dados locais de estudo:</strong> respostas dadas, questões favoritas, caderno de erros, histórico de sessões, sequência de estudos e situação de usuário VIP.</li>
+      <li><strong>Dados de uso e eventos:</strong> o aplicativo utiliza Firebase Analytics para registrar eventos relacionados ao uso, como início e conclusão de quizzes, incluindo informações como modo, matéria e resultado do exercício.</li>
+    </ul>
 
-<p>
-  A sua privacidade é importante para nós. Esta Política de Privacidade
-  explica como o aplicativo <strong>infocon</strong>, desenvolvido por
-  <strong>Jaison do vale</strong>, coleta, utiliza e protege suas informações.
-</p>
+    <p>A senha utilizada no cadastro por e-mail é processada pelo <strong>Firebase Authentication</strong>. O código do aplicativo não armazena a senha em texto simples no Firestore nem nas preferências locais do aplicativo.</p>
 
-<h2>Informações que coletamos</h2>
+    <h2>2. Como usamos as informações</h2>
+    <p>As informações são utilizadas para:</p>
+    <ul>
+      <li>criar, autenticar e manter a sessão do usuário;</li>
+      <li>carregar questões disponibilizadas pelo aplicativo;</li>
+      <li>salvar estatísticas de desempenho e histórico de simulados;</li>
+      <li>exibir o progresso de estudo e o caderno de erros;</li>
+      <li>manter a lista de questões favoritas;</li>
+      <li>calcular taxa de acertos e sequência de dias de estudo;</li>
+      <li>exibir ranking entre usuários autenticados;</li>
+      <li>analisar o uso do aplicativo e melhorar suas funcionalidades;</li>
+      <li>gerenciar anúncios e recursos destinados a usuários VIP;</li>
+      <li>processar compras e assinaturas por meio do Google Play.</li>
+    </ul>
 
-<p>
-  O infocon coleta informações limitadas para fornecer uma experiência
-  de leitura sincronizada e inteligente.
-</p>
+    <h2>3. Ranking</h2>
+    <p>O CONINFO possui uma funcionalidade de ranking. Para isso, informações de desempenho armazenadas no Firebase Firestore podem ser consultadas por outros usuários autenticados. O ranking utiliza dados como nome de exibição, quantidade de questões respondidas, quantidade de acertos, percentual de acertos e sequência de estudos.</p>
+    <p>O endereço de e-mail é armazenado no documento do usuário para fins de conta e sincronização, mas não é utilizado pelo aplicativo como campo de exibição do ranking.</p>
 
-<ul>
-  <li>
-    <strong>Informações de autenticação:</strong>
-    ao criar uma conta, coletamos seu endereço de e-mail por meio do
-    Firebase Authentication.
-  </li>
+    <h2>4. Armazenamento local</h2>
+    <p>Parte das informações de estudo é armazenada localmente no dispositivo por meio das preferências privadas do Android, incluindo respostas, favoritos, caderno de erros, histórico de sessões, sequência de estudo e status VIP.</p>
+    <p>Esses dados podem ser apagados quando o usuário limpa os dados do aplicativo, desinstala o aplicativo conforme o comportamento do sistema Android ou utiliza funcionalidades internas de limpeza quando disponíveis.</p>
 
-  <li>
-    <strong>Dados de leitura:</strong>
-    armazenamos metadados dos livros, como título e autor, além do
-    progresso de leitura para sincronizar sua experiência entre dispositivos.
-  </li>
+    <h2>5. Firebase e serviços Google</h2>
+    <p>O aplicativo utiliza serviços do Google/Firebase, incluindo:</p>
+    <ul>
+      <li><strong>Firebase Authentication</strong> — autenticação por e-mail, Google e sessão anônima;</li>
+      <li><strong>Cloud Firestore</strong> — armazenamento de questões, estatísticas e histórico de simulados;</li>
+      <li><strong>Firebase Analytics</strong> — análise de eventos de uso do aplicativo;</li>
+      <li><strong>Google Credential Manager / Google Sign-In</strong> — autenticação com conta Google;</li>
+      <li><strong>Google Mobile Ads (AdMob)</strong> — exibição de anúncios;</li>
+      <li><strong>Google Play Billing</strong> — processamento de compras e assinaturas;</li>
+      <li><strong>Google Play In-App Updates</strong> — suporte à atualização do aplicativo.</li>
+    </ul>
+    <p>Esses serviços podem tratar informações técnicas, identificadores do dispositivo, dados de diagnóstico, informações de uso e outros dados necessários à prestação de seus serviços, conforme suas próprias políticas e configurações.</p>
+    <p>Consulte a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidade do Google</a>.</p>
 
-  <li>
-    <strong>Interações com IA:</strong>
-    as perguntas enviadas ao assistente de inteligência artificial são
-    processadas para gerar respostas relacionadas aos livros.
-  </li>
+    <h2>6. Anúncios</h2>
+    <p>O CONINFO integra o Google Mobile Ads (AdMob) para exibição de anúncios em determinadas áreas do aplicativo. Usuários identificados pelo aplicativo como VIP podem ter anúncios ocultados de acordo com a funcionalidade adquirida.</p>
+    <p>O processamento relacionado a publicidade é realizado pelo SDK do Google Mobile Ads e está sujeito às políticas e configurações aplicáveis do Google.</p>
 
-  <li>
-    <strong>Conteúdo dos livros:</strong>
-    o conteúdo do livro poderá ser utilizado como contexto temporário
-    para gerar respostas relacionadas ao conteúdo consultado pelo usuário.
-  </li>
-</ul>
+    <h2>7. Compras e assinaturas</h2>
+    <p>O aplicativo utiliza o Google Play Billing para consultar e processar produtos como remoção de anúncios e assinatura VIP. As informações de pagamento são processadas pelo Google Play. O CONINFO consulta o estado das compras para determinar se os benefícios correspondentes devem ser ativados.</p>
 
-<h2>Como usamos suas informações</h2>
+    <h2>8. Compartilhamento de informações</h2>
+    <p>O desenvolvedor não vende informações pessoais dos usuários. Informações podem ser processadas por provedores utilizados pelo aplicativo, especialmente Google e Firebase, quando isso for necessário para autenticação, armazenamento, análise, publicidade, compras e funcionamento das funcionalidades descritas nesta política.</p>
 
-<p>
-  Utilizamos os dados coletados para:
-</p>
+    <h2>9. Segurança</h2>
+    <p>O aplicativo utiliza mecanismos de autenticação do Firebase e regras de segurança do Cloud Firestore. As regras do projeto restringem a alteração das estatísticas de usuário ao respectivo UID e limitam o acesso ao histórico de simulados ao proprietário.</p>
+    <p>Apesar das medidas adotadas, nenhum sistema de transmissão ou armazenamento eletrônico pode garantir segurança absoluta.</p>
 
-<ul>
-  <li>Autenticar e proteger o acesso à conta do usuário.</li>
+    <h2>10. Exclusão da conta e dos dados</h2>
+    <p>O usuário pode solicitar a exclusão de sua conta e dos dados pessoais associados entrando em contato pelo e-mail: <a href="mailto:jaison1232@gmail.com"><strong>jaison1232@gmail.com</strong></a>.</p>
+    <p>A solicitação deve informar o endereço de e-mail utilizado na conta, quando aplicável, para permitir a identificação dos dados correspondentes. Dados armazenados localmente também podem ser removidos limpando os dados do aplicativo no Android ou desinstalando-o, observadas as rotinas de backup do próprio sistema.</p>
 
-  <li>Sincronizar a biblioteca de livros na nuvem.</li>
+    <h2>11. Privacidade de crianças</h2>
+    <p>O CONINFO é um aplicativo voltado à preparação para concursos e não foi desenvolvido com a finalidade de coletar deliberadamente dados pessoais de crianças.</p>
+    <p>Caso um responsável identifique o fornecimento indevido de informações pessoais por uma criança, poderá entrar em contato pelo e-mail informado nesta política para solicitar análise e, quando aplicável, exclusão.</p>
 
-  <li>Salvar e sincronizar o progresso de leitura.</li>
+    <h2>12. Alterações nesta Política de Privacidade</h2>
+    <p>Esta Política de Privacidade poderá ser atualizada para refletir mudanças no aplicativo, nos serviços utilizados ou em requisitos legais e de plataforma. A data da versão mais recente será apresentada no início desta página.</p>
 
-  <li>
-    Fornecer respostas e recursos de inteligência artificial
-    relacionados aos livros.
-  </li>
-
-  <li>
-    Manter a segurança e o funcionamento adequado do aplicativo.
-  </li>
-</ul>
-
-<h2>Serviços de terceiros</h2>
-
-<p>
-  O infocon utiliza serviços de terceiros para fornecer determinadas
-  funcionalidades do aplicativo, incluindo:
-</p>
-
-<ul>
-  <li>Firebase Authentication, para autenticação dos usuários.</li>
-
-  <li>
-    Serviços do Google Firebase, para armazenamento e sincronização
-    de dados.
-  </li>
-
-  <li>
-    Google Cloud Vertex AI, para processamento dos recursos de
-    inteligência artificial.
-  </li>
-</ul>
-
-<p>
-  O tratamento de dados realizado por esses serviços está sujeito às
-  respectivas políticas de privacidade dos fornecedores.
-</p>
-
-<p>
-  Consulte a
-  <a
-    href="https://policies.google.com/privacy"
-    target="_blank"
-    rel="noopener noreferrer">
-    Política de Privacidade do Google
-  </a>.
-</p>
-
-<h2>Compartilhamento de informações</h2>
-
-<p>
-  O infocon não vende informações pessoais dos usuários.
-</p>
-
-<p>
-  As informações poderão ser processadas pelos serviços de terceiros
-  utilizados pelo aplicativo quando isso for necessário para fornecer
-  as funcionalidades do aplicativo.
-</p>
-
-<h2>Exclusão de dados</h2>
-
-<p>
-  O usuário pode solicitar a exclusão de sua conta e dos dados
-  associados a ela a qualquer momento.
-</p>
-
-<p>
-  Para solicitar a exclusão dos dados, entre em contato com o
-  desenvolvedor pelo endereço:
-</p>
-
-<p>
-  <a href="mailto:jaison1232@gmail.com">
-    <strong>jaison1232@gmail.com</strong>
-  </a>
-</p>
-
-<p>
-  Quando disponível, o usuário também poderá utilizar as opções de
-  gerenciamento de conta existentes no aplicativo.
-</p>
-
-<h2>Segurança</h2>
-
-<p>
-  Empregamos medidas de segurança razoáveis para proteger as
-  informações dos usuários contra acesso não autorizado, alteração,
-  divulgação ou destruição.
-</p>
-
-<p>
-  No entanto, nenhum método de transmissão pela internet ou
-  armazenamento eletrônico é 100% seguro. Portanto, não podemos
-  garantir segurança absoluta das informações.
-</p>
-
-<h2>Privacidade de crianças</h2>
-
-<p>
-  O infocon não tem como objetivo coletar deliberadamente informações
-  pessoais de crianças.
-</p>
-
-<p>
-  Caso um responsável identifique que uma criança forneceu informações
-  pessoais sem a devida autorização, poderá entrar em contato pelo
-  e-mail
-  <a href="mailto:jaison1232@gmail.com">
-    jaison1232@gmail.com
-  </a>
-  para solicitar a análise e, quando aplicável, a exclusão dessas
-  informações.
-</p>
-
-<h2>Alterações nesta Política de Privacidade</h2>
-
-<p>
-  Podemos atualizar esta Política de Privacidade periodicamente para
-  refletir alterações nas funcionalidades do aplicativo, nos serviços
-  utilizados ou nas exigências legais.
-</p>
-
-<p>
-  A data da última atualização será informada no início desta página.
-  Recomendamos que os usuários revisem esta Política de Privacidade
-  periodicamente.
-</p>
-
-<h2>Contato</h2>
-
-<p>
-  Se você tiver alguma dúvida, solicitação ou sugestão relacionada à
-  privacidade ou ao tratamento de dados no aplicativo
-  <strong>infocon</strong>, entre em contato com o desenvolvedor:
-</p>
-
-<p>
-  <strong>Desenvolvedor:</strong> Jaison do vale<br />
-  <strong>Aplicativo:</strong> infocon<br />
-  <strong>E-mail:</strong>
-  <a href="mailto:jaison1232@gmail.com">
-    jaison1232@gmail.com
-  </a>
-</p>
-
+    <h2>13. Contato</h2>
+    <p>Para dúvidas, solicitações ou assuntos relacionados à privacidade e ao tratamento de dados no CONINFO:</p>
+    <p><strong>Desenvolvedor:</strong> Jaison do vale<br />
+       <strong>Aplicativo:</strong> CONINFO - Concursos<br />
+       <strong>E-mail:</strong> <a href="mailto:jaison1232@gmail.com">jaison1232@gmail.com</a>
+    </p>
   </div>
-
 </body>
 </html>
